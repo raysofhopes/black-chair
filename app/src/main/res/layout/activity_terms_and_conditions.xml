@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="termsAndConditionsVM" type="com.android.app.modules.termsandconditions.data.viewmodel.TermsAndConditionsVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearGroup101"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearNameanddate"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/_27pxh"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtJohnDoeInLor"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_18pxv"
+                    android:layout_weight="0.66"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{termsAndConditionsVM.termsAndConditionsModel.txtJohnDoeInLor}"
+                    style="@style/txtPoppinsmedium14" tools:text="@string/msg_john_doe_in_lor"/>
+                <View
+                    android:background="@drawable/rectangle_bg_black_900_87_radius_1_5"
+                    android:id="@+id/viewDividercircle"
+                    android:layout_height="@dimen/_3pxh"
+                    android:layout_marginBottom="@dimen/_9pxv"
+                    android:layout_marginStart="@dimen/_8pxh"
+                    android:layout_marginTop="@dimen/_27pxv" android:layout_width="@dimen/_3pxh"/>
+                <TextView android:alpha="0.5" android:ellipsize="end"
+                    android:id="@+id/txt29July"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8pxh"
+                    android:layout_marginTop="@dimen/_18pxv"
+                    android:layout_weight="0.19"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{termsAndConditionsVM.termsAndConditionsModel.txt29July}"
+                    style="@style/txtPoppinsmedium14_1" tools:text="@string/lbl_29_july"/>
+                <ImageView android:id="@+id/imageCloseicon"
+                    android:layout_height="@dimen/_36pxh"
+                    android:layout_marginBottom="@dimen/_3pxv"
+                    android:layout_marginStart="@dimen/_46pxh"
+                    android:layout_width="@dimen/_36pxh"
+                    android:scaleType="fitXY" android:src="@drawable/img_closeicon_1"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_16pxv"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearGroup99"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtTermsAndCondi"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{termsAndConditionsVM.termsAndConditionsModel.txtTermsAndCondi}"
+                    style="@style/txtPoppinssemibold18" tools:text="@string/msg_terms_and_condi"/>
+                <TextView android:alpha="0.6" android:ellipsize="end"
+                    android:id="@+id/txtEffectiveSept"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_6pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{termsAndConditionsVM.termsAndConditionsModel.txtEffectiveSept}"
+                    style="@style/txtPoppinslight14" tools:text="@string/msg_effective_sept"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtYouCanSeeOur"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_20pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{termsAndConditionsVM.termsAndConditionsModel.txtYouCanSeeOur}"
+                    style="@style/txtPoppinsitalic12" tools:text="@string/msg_you_can_see_our"/>
+                <TextView android:alpha="0.87"
+                    android:id="@+id/txtLoremIpsumDol"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_30pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{termsAndConditionsVM.termsAndConditionsModel.txtLoremIpsumDol}"
+                    style="@style/txtPoppinsregular14_3" tools:text="@string/msg_lorem_ipsum_dol5"/>
+                <TextView android:alpha="0.87"
+                    android:id="@+id/txtLoremIpsumDol1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_30pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{termsAndConditionsVM.termsAndConditionsModel.txtLoremIpsumDol1}"
+                    style="@style/txtPoppinsregular14_3" tools:text="@string/msg_lorem_ipsum_dol4"/>
+                <TextView android:alpha="0.87"
+                    android:id="@+id/txtLoremIpsumDol2"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_30pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{termsAndConditionsVM.termsAndConditionsModel.txtLoremIpsumDol2}"
+                    style="@style/txtPoppinsregular14_3" tools:text="@string/msg_lorem_ipsum_dol4"/>
+                <TextView android:alpha="0.87"
+                    android:id="@+id/txtLoremIpsumDol3"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_30pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{termsAndConditionsVM.termsAndConditionsModel.txtLoremIpsumDol3}"
+                    style="@style/txtPoppinsregular14_3" tools:text="@string/msg_lorem_ipsum_dol5"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtYourAccountAn"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_25pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{termsAndConditionsVM.termsAndConditionsModel.txtYourAccountAn}"
+                    style="@style/txtPoppinsmedium18" tools:text="@string/msg_your_account_an"/>
+                <TextView android:alpha="0.87"
+                    android:id="@+id/txtLoremIpsumDol4"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_20pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{termsAndConditionsVM.termsAndConditionsModel.txtLoremIpsumDol4}"
+                    style="@style/txtPoppinsregular14_3" tools:text="@string/msg_lorem_ipsum_dol5"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

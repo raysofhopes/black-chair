@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="notifications1RowModel" type="com.android.app.modules.notifications.data.model.Notifications1RowModel"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearGroup"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearGroup22"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <ImageView android:id="@+id/imageUnsplash93BsHR"
+                android:layout_height="@dimen/_52pxh"
+                android:layout_marginBottom="@dimen/_11pxv"
+                android:layout_width="@dimen/_52pxh"
+                android:scaleType="fitXY" circular="@{true}"
+                imageRes="@{@drawable/img_unsplash93bshr}" tools:src="@drawable/img_unsplash93bshr"/>
+            <TextView android:id="@+id/txtBezaleelNwabia"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_11pxh"
+                android:layout_weight="0.84" android:layout_width="0dp"
+                android:text="@{notifications1RowModel.txtBezaleelNwabia}"
+                style="@style/txtPoppinsregular14_2" tools:text="@string/msg_bezaleel_nwabia"/>
+        </LinearLayout>
+        <View android:background="@color/black_900"
+            android:id="@+id/lineLine7" android:layout_gravity="start"
+            android:layout_height="@dimen/_1pxv"
+            android:layout_marginTop="@dimen/_20pxv" android:layout_width="@dimen/_375pxh"/>
+    </LinearLayout>
+</layout>

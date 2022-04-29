@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="blogVM" type="com.android.app.modules.blog.data.viewmodel.BlogVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearBlog"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearGroup89"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar android:gravity="start"
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearNameanddate"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/_15pxh"
+                    android:layout_marginStart="@dimen/_28pxh"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtJohnDoeInLor"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_18pxv"
+                        android:layout_weight="0.66"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{blogVM.blogModel.txtJohnDoeInLor}"
+                        style="@style/txtPoppinsmedium14" tools:text="@string/msg_john_doe_in_lor"/>
+                    <View
+                        android:background="@drawable/rectangle_bg_black_900_87_radius_1_5"
+                        android:id="@+id/viewDividercircle"
+                        android:layout_height="@dimen/_3pxh"
+                        android:layout_marginBottom="@dimen/_9pxv"
+                        android:layout_marginStart="@dimen/_8pxh"
+                        android:layout_marginTop="@dimen/_27pxv" android:layout_width="@dimen/_3pxh"/>
+                    <TextView android:alpha="0.5"
+                        android:ellipsize="end"
+                        android:id="@+id/txt29July"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8pxh"
+                        android:layout_marginTop="@dimen/_18pxv"
+                        android:layout_weight="0.19"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{blogVM.blogModel.txt29July}"
+                        style="@style/txtPoppinsmedium14_1" tools:text="@string/lbl_29_july"/>
+                    <ImageView android:id="@+id/imageCloseicon"
+                        android:layout_height="@dimen/_36pxh"
+                        android:layout_marginBottom="@dimen/_3pxv"
+                        android:layout_marginStart="@dimen/_46pxh"
+                        android:layout_width="@dimen/_36pxh"
+                        android:scaleType="fitXY" android:src="@drawable/img_closeicon"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <TextView android:gravity="start"
+                android:id="@+id/txtLoremIpsumDol"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_17pxh"
+                android:layout_marginStart="@dimen/_28pxh"
+                android:layout_marginTop="@dimen/_24pxv"
+                android:layout_width="match_parent"
+                android:text="@{blogVM.blogModel.txtLoremIpsumDol}"
+                style="@style/txtPoppinssemibold24" tools:text="@string/msg_lorem_ipsum_dol3"/>
+            <TextView android:gravity="start"
+                android:id="@+id/txtLoremIpsumDol1"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_28pxh"
+                android:layout_marginStart="@dimen/_28pxh"
+                android:layout_marginTop="@dimen/_15pxv"
+                android:layout_width="match_parent"
+                android:text="@{blogVM.blogModel.txtLoremIpsumDol1}"
+                style="@style/txtPoppinsmediumitalic14" tools:text="@string/msg_lorem_ipsum_dol4"/>
+            <ImageView android:id="@+id/imageBlogimage"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_167pxh"
+                android:layout_marginEnd="@dimen/_27pxh"
+                android:layout_marginStart="@dimen/_27pxh"
+                android:layout_marginTop="@dimen/_27pxv"
+                android:layout_width="@dimen/_320pxh"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_blogimage}" tools:src="@drawable/img_blogimage"/>
+            <TextView android:alpha="0.5" android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtImageCreditL"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_27pxh"
+                android:layout_marginStart="@dimen/_27pxh"
+                android:layout_marginTop="@dimen/_9pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{blogVM.blogModel.txtImageCreditL}"
+                style="@style/txtPoppinsregular12_2" tools:text="@string/msg_image_credit_l"/>
+            <TextView android:gravity="start"
+                android:id="@+id/txtDuisAuteIrure"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_28pxh"
+                android:layout_marginStart="@dimen/_28pxh"
+                android:layout_marginTop="@dimen/_28pxv"
+                android:layout_width="match_parent"
+                android:text="@{blogVM.blogModel.txtDuisAuteIrure}"
+                style="@style/txtPoppinsregular14_2" tools:text="@string/msg_duis_aute_irure"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

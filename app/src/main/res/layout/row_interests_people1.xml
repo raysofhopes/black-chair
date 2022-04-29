@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="interestsPeople1RowModel" type="com.android.app.modules.interestspeople.data.model.InterestsPeople1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearPeoplelist"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <ImageView android:id="@+id/imageProfilePicture"
+            android:layout_height="@dimen/_60pxh"
+            android:layout_width="@dimen/_60pxh"
+            android:scaleType="fitXY" circular="@{true}"
+            imageRes="@{@drawable/img_profilepicture}" tools:src="@drawable/img_profilepicture"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearPersondetails"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15pxh"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_weight="0.5" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtJohnDoe"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{interestsPeople1RowModel.txtJohnDoe}"
+                style="@style/txtPoppinssemibold16" tools:text="@string/lbl_john_doe"/>
+            <TextView android:id="@+id/txtLoremIpsumIs"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_width="match_parent"
+                android:text="@{interestsPeople1RowModel.txtLoremIpsumIs}"
+                style="@style/txtPoppinsregular12_1" tools:text="@string/msg_lorem_ipsum_is"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnFollow"
+            android:layout_height="@dimen/_32pxv"
+            android:layout_marginBottom="@dimen/_28pxv"
+            android:layout_marginStart="@dimen/_11pxh"
+            android:layout_width="@dimen/_87pxh"
+            android:paddingBottom="@dimen/_5pxv"
+            android:paddingEnd="@dimen/_9pxh"
+            android:paddingStart="@dimen/_9pxh"
+            android:paddingTop="@dimen/_5pxv" android:singleLine="true"
+            android:text="@string/lbl_follow"
+            android:textAllCaps="false" style="@style/btnSolidRounded_1" tools:text="@string/lbl_follow"/>
+    </LinearLayout>
+</layout>
